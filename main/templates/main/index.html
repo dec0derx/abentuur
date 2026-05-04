@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abentuur</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+
+<main class="page">
+
+    <!-- Top Navigation -->
+    <header class="topbar">
+        <div class="brand">
+            <img src="{% static 'logo-black.png' %}" alt="Abentuur" class="logo">
+            <span class="brand-name">Abentuur</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#" class="nav-link">Uploads</a>
+            <a href="#" class="nav-link">Settings</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Create, Edit & Deliver Faster</h1>
+        <p>
+            A modern workspace for uploading, managing, and editing your media projects.
+        </p>
+
+        <div class="hero-actions">
+            <button class="primary-btn">New Project</button>
+            <button class="secondary-btn">Upload Media</button>
+        </div>
+    </section>
+
+
+    <!-- Dashboard Cards -->
+    <section class="grid">
+
+        <div class="card">
+            <h3>📁 Upload Files</h3>
+            <p>Drag & drop videos or images to start a new project.</p>
+            <button class="card-btn">Upload</button>
+        </div>
+
+        <div class="card">
+            <h3>🎬 Recent Projects</h3>
+            <p>Continue editing your latest work instantly.</p>
+            <button class="card-btn">Open</button>
+        </div>
+
+        <div class="card">
+            <h3>⚡ AI Tools</h3>
+            <p>Enhance, cut, and generate content automatically.</p>
+            <button class="card-btn">Explore</button>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Abentuur. Built for creators.</p>
+    </footer>
+
+</main>
+
+</body>
+</html>
