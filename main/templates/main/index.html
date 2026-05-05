@@ -14,30 +14,38 @@
 <main class="page">
 
     <!-- Top Navigation -->
-    <header class="topbar">
+    <header class="topbar topbar-dark">
         <div class="brand">
-            <img src="{% static 'logo-black.png' %}" alt="Abentuur" class="logo">
+            <a href="/">
+                <img src="{% static 'logo-white-no-background-small.jpg' %}" alt="Abentuur" class="logo">
+            </a>
         </div>
 
         <nav class="nav">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#why" class="nav-link">Why Abentuur</a>
+            <a href="#process" class="nav-link">How it Works</a>
+            <a href="#faq" class="nav-link">Upload Footage</a>
         </nav>
+
+        <a href="{% url 'uploads:upload_footage' %}" class="hero-cta">Get an Instant Quote</a>
     </header>
 
 
     <!-- Hero -->
-    <section class="hero">
-        <h1>Professional Video Editing</h1>
-        <p>
-            Clean, cinematic editing using Final Cut Pro.  
-            You send the footage — I craft the final story.
-        </p>
+    <section class="hero hero-split">
+        <div class="hero-copy">
+            <h1>Expert Video Editing for Creators and Small Businesses</h1>
+            <p>From raw footage to polished final cut, Abentuur delivers fast, cinematic editing with a streamlined workflow and clear communication.</p>
+            <a href="{% url 'uploads:upload_footage' %}" class="primary-btn">Get an Instant Quote</a>
+        </div>
 
-        <div class="hero-actions">
-            <a href="{% url 'uploads:upload_footage' %}" class="primary-btn">Upload Footage</a>
-            <button class="secondary-btn">View Portfolio</button>
+        <div class="hero-media">
+            <div class="hero-media-frame">
+                <video class="hero-video" controls muted autoplay loop playsinline>
+                    <source src="{% static 'Summary_Abentuur.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </section>
 
@@ -61,30 +69,6 @@
         </div>
 
     </section>
-
-
-    <!-- Services -->
-    <section id="services" class="hero">
-        <h2>Services</h2>
-        <p>
-            Video editing for creators, businesses, and brands.  
-            From raw footage to polished final cut.
-        </p>
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact" class="hero">
-        <h2>Contact</h2>
-        <p>
-            Have a project in mind? Send your details and footage info to get started.
-        </p>
-
-        <div class="hero-actions">
-            <button class="primary-btn">Contact Me</button>
-        </div>
-    </section>
-
 
     <!-- Footer -->
     <footer class="footer">
