@@ -10,18 +10,29 @@
 </head>
 <body>
 <main class="page upload-page">
-    <header class="topbar">
+    <header class="topbar topbar-dark">
         <div class="brand">
-            <a href="/"><img src="{% static 'logo-black.png' %}" alt="Abentuur" class="logo"></a>
+            <a href="/"><img src="{% static 'logo-white-no-background-small.jpg' %}" alt="Abentuur" class="logo"></a>
         </div>
+
+        <nav class="nav">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/" class="nav-link">Why Abentuur</a>
+            <a href="/" class="nav-link">Upload Footage</a>
+        </nav>
+
+        <a href="{% url 'uploads:upload_footage' %}" class="hero-cta">Get an Instant Quote</a>
     </header>
 
     <section class="hero">
-        <h1>Upload Your Footage</h1>
-        <p>Share your raw clips and project details here. No login required.</p>
+        <div class="hero-copy">
+            <h1>Upload Your Footage</h1>
+            <p>Share your raw clips and project details here. No login required.</p>
+            <a href="#upload-form" class="primary-btn">Start Upload</a>
+        </div>
     </section>
 
-    <section class="form-card">
+    <section class="form-card" id="upload-form">
         {% if saved %}
             <div class="success-message">
                 <h2>🎉 Thanks! Your footage is on the way.</h2>

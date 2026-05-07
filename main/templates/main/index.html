@@ -27,7 +27,7 @@
             <a href="#faq" class="nav-link">Upload Footage</a>
         </nav>
 
-        <a href="{% url 'uploads:upload_footage' %}" class="hero-cta">Get an Instant Quote</a>
+        <a href="{% url 'uploads:upload_footage' %}" class="hero-cta">Contact us now</a>
     </header>
 
 
@@ -42,32 +42,38 @@
         <div class="hero-media">
             <div class="hero-media-frame">
                 <video class="hero-video" controls muted autoplay loop playsinline>
-                    <source src="{% static 'Summary_Abentuur.mp4' %}" type="video/mp4">
+                    <source src="{% static 'Rules_Square.mp4' %}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </div>
     </section>
 
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="grid">
-
-        <div class="card">
-            <h3>🎬 Commercial Work</h3>
-            <p>Brand and marketing videos with clean storytelling and pacing.</p>
+    <!-- Process -->
+    <section id="process" class="process-section">
+        <h2>How it Works</h2>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="process-step-number">1</div>
+                <h3>Record your video</h3>
+                <p>Capture your footage with your phone or camera, then send it to us exactly as it is.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-step-number">2</div>
+                <h3>Upload the footage</h3>
+                <p>Submit your clips through our upload page and share your notes for the edit.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-step-number">3</div>
+                <h3>We edit that footage</h3>
+                <p>Our team refines the story, trims the pacing, and adds polish for a professional finish.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-step-number">4</div>
+                <h3>You download the video</h3>
+                <p>Receive your completed file ready to share across socials, website, or marketing channels.</p>
+            </div>
         </div>
-
-        <div class="card">
-            <h3>🎥 Social Media Edits</h3>
-            <p>Short-form content optimized for engagement and retention.</p>
-        </div>
-
-        <div class="card">
-            <h3>📽️ Personal Projects</h3>
-            <p>Cinematic edits, creative experiments, and storytelling pieces.</p>
-        </div>
-
     </section>
 
     <!-- Footer -->
